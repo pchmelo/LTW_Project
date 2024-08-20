@@ -1,0 +1,441 @@
+.adminContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    font-size: 1.25em;
+}
+.Container{
+
+    margin-top: 5em;
+}
+
+
+#sideOptions {
+    position: fixed;
+    left: 0;
+    top: 5%;
+    height: 100%;
+    width: 15vw;
+    padding: 2.5vw;
+    overflow: auto;
+
+    h1{
+        font-size: 1.5em;
+        color: #757575;
+        margin-bottom: 1em;
+        margin-left: 0.25em;
+    }
+}
+
+#sideOptions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sideOptions ul li {
+    padding: 0.7em;
+    border-radius: 0.3em;
+}
+
+#sideOptions ul li {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+#sideOptions ul li:hover {
+    background-color: #f2f2f2;
+}
+
+#sideOptions a.active{
+    li{
+        background-color: #e6e6e6;
+        &:hover{
+            background-color: #ddd;
+        }
+    }
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 45em; 
+    height: 6em; 
+    margin: 0.625em; 
+    padding: 1.25em; 
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.user:hover {
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+}
+
+.userID, .username, .email, .rank, .lock {
+    margin-bottom: 10px;
+}
+
+.lock button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 0.703125em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0.1875em 0.09375em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.lock button:hover {
+    transform: scale(1.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userID, .username, .email, .rank {
+    flex: 1;
+    margin-right: 0.46875em;
+    white-space: nowrap;
+}
+
+.rankUpButton {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75em;
+    margin: 0.1875em 0.09375em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+
+.rankUpButton:hover {
+    transform: scale(1.1);
+    background-color: #007B9E;
+}
+
+.lockButton:hover {
+    transform: scale(1.1);
+    background-color: #45a049; 
+}
+
+.unlockButton:hover {
+    transform: scale(1.1);
+    background-color: #d32f2f; 
+}
+
+.info, .actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lockButton, .unlockButton, .rankUpButton {
+    width: 10em; 
+    height: 3em; 
+}
+
+.orderTile {
+    border: 0.0625em solid #000;
+    padding: 0.625em;
+    margin: 0.625em 0;
+}
+
+.orderID, .orderDate, .orderStatus {
+    margin-bottom: 0.625em;
+}
+
+.orderTile {
+    border: 0.0625em solid #000;
+    padding: 0.625em;
+    margin: 0.625em 0;
+}
+
+.orderID, .orderDate, .orderStatus {
+    margin-bottom: 0.625em;
+}
+
+.caracteristicTile {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 0.5em; 
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    padding: 2em; 
+    background-color: #fff; 
+    width: 25em; 
+    height: 5em; 
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.caracteristicId, .caracteristicName {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333; 
+}
+
+.tileButtons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5em;
+}
+
+.tileButton {
+    display: block;
+    margin-bottom: 0.5em;
+    background-color: #007BFF; 
+    color: #fff; 
+    border: none; 
+    border-radius: 0.25em; 
+    padding: 0.5em 0.5em;
+    text-align: center; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+    font-size: 1.25em;
+}
+
+.tileButton:hover {
+    background-color: #0056b3; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #0056b3;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton {
+    padding: 0.625em 1.25em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #0056b3;
+}
+
+.addForm {
+    margin-top: 1.25em;
+    padding: 1.25em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+}
+
+.addForm label {
+    display: block;
+    margin-bottom: 0.625em;
+}
+
+.addForm input[type="text"] {
+    width: 100%;
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+}
+
+.addForm input[type="submit"] {
+    margin-top: 1.25em;
+    padding: 0.625em 1.25em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: stretch;
+}
+
+.editForm {
+    display: none;
+    flex-direction: column;
+    padding: 1.25em;
+    border-top: 0.0625em solid #ccc;
+    right: 0;
+    left: 0;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+}
+
+.editForm label {
+    display: block;
+    margin-bottom: 0.625em;
+    flex-grow: 1;
+}
+
+.editForm input[type="text"] {
+    width: 100%;
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+}
+
+.editForm input[type="submit"] {
+    margin-top: 1.25em;
+    padding: 0.625em 1.25em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editForm input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tileButton {
+    padding: 0.625em 1.25em;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tileButton:hover {
+    background-color: #c82333;
+}
+
+.editButton {
+    padding: 0.625em 1.25em;
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 0.3125em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: #e0a800;
+}
+
+.limited-img {
+    max-width: 6.25em;
+    max-height: 6.25em;
+    object-fit: cover;
+    margin-right: 1em;
+}
+
+.caracteristicInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caracteristicWrapper {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.myEditForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1.25em;
+    border: 0.0625em solid #ced4da;
+    border-radius: 0.25em;
+    width: 18.75em;
+    margin: 0 auto;
+}
+
+.myEditForm input[type="submit"] {
+    margin-top: 0.625em;
+}
+
+.myEditForm label {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.625em;
+}
+
+.buttonWrapper {
+    text-align: center;
+}
+
+.myEditForm input[type="text"] {
+    padding: 0.625em;
+    font-size: 1em;
+    border: 0.0625em solid #ced4da;
+    border-radius: 0.25em;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0.0625em 0.1875em rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.myEditForm input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.myEditFormDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.myEditFormDiv form {
+    margin-bottom: 1em; 
+}

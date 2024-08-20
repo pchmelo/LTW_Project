@@ -1,0 +1,249 @@
+#SubmitProductContainer{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fbf7
+}
+
+.submit-section {
+    margin-top: 10em;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.submit-section button{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%; 
+    padding: 0.8em 1em;
+    background: #0047ab; 
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submit-section button:hover{
+    background: #002b6b;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.submit-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-item {
+    font-weight: bold;
+    font-size: 1.2em;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding: 1em;
+    align-items: center;
+}
+
+.info-item input, .info-item select, .info-item textarea{
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    resize: none;
+}
+
+.info-item input:focus, .info-item select:focus {
+    outline: none;
+    border-color: #0047ab;
+}
+
+
+#change{
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    a:hover{
+        cursor: pointer;
+        color: black;
+        label{
+            cursor: pointer;
+        }
+    }
+    
+    .info-item{
+        padding: 1.5em;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: #eaeaea;
+        }
+    }
+}
+
+#delete{
+    width: 40%;
+    padding: 1em;
+    background-color: red;
+    border-radius: 0.15em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+
+    &:hover{
+        background-color: #b30000;
+
+    }
+}
+
+
+
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25em;
+    width: 100%;
+
+}
+
+#imageLabel {
+    margin-bottom: 0.625em;
+}
+
+.uploadButton {
+    width: 20%;
+    align-self: center;
+    padding: 0.625em 1.25em;
+    border-color: #007BFF;
+    background-color: #eaeaea;
+    border: none;
+    color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.25em 0.125em; 
+    cursor: pointer; 
+    border-radius: 0.25em;
+    transition: background-color 0.3s ease;
+}
+
+.uploadButton:hover {
+    background-color: #0056b3;
+}
+
+.uploadButton:active {
+    background-color: #003d80; 
+}
+
+.uploadButton::before {
+    content: "⬆";
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.25em;
+    border-radius: 50%;
+    text-align: center;
+    border: 0.0625em solid currentColor;
+    margin-right: 0.3125em;
+}
+
+#imagemUploaded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    margin-top: 1em;
+}
+
+#changeUploadButton{
+    width: 20%;
+    align-self: center;
+    padding: 0.625em 1.25em;
+    border-color: #007BFF;
+    background-color: #eaeaea;
+    border: none;
+    color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.25em 0.125em; 
+    cursor: pointer; 
+    border-radius: 0.25em;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #0056b3;
+    }
+
+}
+
+select{
+    background-color: #f7fbfc;
+    font-size: 100%;
+    padding: 1em;
+    padding-right: 13.13em;
+    padding-bottom: 0.3em;
+    padding-left: 0;
+    border: none;
+    margin-top: 0;
+    border-bottom-style: solid;
+    border-color: #eaeaea;
+    transition: all 0.3s ease;
+
+    &:focus{
+        outline: none;
+        border-color: #bcbcbc;
+
+    }
+}
+
+.name{
+    color:#0047ab !important;
+}
+
+
+label[for="description"] {
+    display: block;
+}
+
+#description{
+    height: 10em;
+
+}
+
+.relativeCounterContainer{
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    font-size: 0.7em;
+}

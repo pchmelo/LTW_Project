@@ -1,0 +1,100 @@
+body{
+    height: 100%;
+}
+
+
+
+#containerProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+
+#s1{
+    margin-top: 4.25em;
+    height: 35vh;
+    display: flex;
+    column-gap: 1em;
+    width: 100vw;
+    align-items: center;
+    padding: 1vw;
+    border-bottom-style: solid;
+    border-bottom-color: #f2f2f2;
+
+    #profilePic{
+        width: 13.5vw;
+        height: 13.5vw;
+        border-radius: 50%;
+        margin: 3em;
+        margin-top: 0.8em;
+        margin-bottom: 0em;
+        margin-right: 1.5em;
+        border-style: solid;
+        border-color: #f2f2f2;
+    }
+
+    #info{
+        height: 13.5vw;
+        margin-top: 0.9em;
+        #name{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        div#name{
+            width: 30em;
+            display: flex;
+            font-size: 1.8em;
+            margin-bottom: 0;
+            button{
+                font-size: 1em;
+            }
+        }
+
+        #username{
+            font-size: 1.15em;
+            font-weight: bold;
+            opacity: 0.3;
+            transform: skewX(-15deg);
+            margin-top: 0;
+        }
+
+        #numberproducts{
+            opacity: 0.9;
+            font-size: 1em;
+            margin-top: 1.5em;
+        }
+    }
+
+    #DM{
+        margin-left: 50em;
+    }
+
+    button{
+        font-size: 1em;
+        background-color: #f2f2f2;
+        border-style: solid;
+        border-color: #f2f2f2;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        margin: 0.5em;
+        font-size: 1em;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+    button:hover{
+        background-color: #e6e6e6;
+        cursor: pointer;
+    }
+}
+
+#flex1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+}
+

@@ -1,0 +1,362 @@
+body{
+    overflow: hidden;
+}
+
+.cartContainer {
+    display: flex !important;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.inlineContain{
+    margin-top: 5em;
+    margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: center;
+     height: 90%;
+}
+
+.overflowContainer{
+    max-height: 60vh;
+    overflow: auto;
+    width: 90%;
+    margin-right: 5%;
+}
+
+.topFlex{
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    div {
+        font-weight: bold;
+    }
+
+
+    img{
+        width: 8em !important;
+        height: 8em !important;
+    }
+}
+
+
+#first{
+    width: 90%;
+    margin-right: 5%;
+    position: sticky;
+    padding-top: 1em;
+    text-align: left;
+    border-bottom-style: solid;
+    padding-bottom: 1em;
+    border-bottom-width: 0.05em;
+    margin-bottom: 1em;
+    opacity: 0.75;
+    font-size: 1.8em;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+#second{
+    opacity: 0.5;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+
+}
+
+
+#productlisting{
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+}
+
+.productInfo{
+    display: flex;
+    margin-bottom: 1em;
+}
+
+
+.priceInfo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.infoList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97.5%;
+    align-self: center;
+    margin-left: 1em;
+
+    h3{
+        margin: 0;
+    }
+    a{
+        color: black;
+        transition: all 0.3s ease;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    div{
+        opacity: 0.5;
+    }
+}
+
+.infoList div:nth-child(1),
+.infoList div:nth-child(2) {
+    flex: 0.8;
+}
+
+.infoList div:nth-child(3) {
+    flex: 0;
+}
+
+
+
+.removeButton{
+    background: none;
+    color: #f44336;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0em;
+    font-weight: bold;
+
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+#productSeller {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    width: 80%;
+}
+
+.alignRight{
+    text-align: right;
+}
+
+
+#rightSide{
+    width: 25%;
+    margin-left: 0em;
+    margin-right: 3em;
+
+    #first{
+        margin-right: 10%;
+    }
+
+    #second{
+        opacity: 0.7 !important;
+    }
+}
+
+#finalPrice{
+    border-top-style: solid;
+    border-width: 0.1em;
+    padding-top: 1em;
+    margin-top: 9em;
+    margin-bottom: 1em;
+    margin-left: 0em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    width: 100%;
+
+}
+
+#checkoutButton {
+    background: linear-gradient(to right, #007BFF, #0069D9);
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+    &:hover {
+        background: linear-gradient(to right, #0069D9, #007BFF);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.42);
+    }
+}
+
+#removeDiv{
+    opacity: 0.9 !important;
+}
+
+#payButton{
+    background: linear-gradient(to right, #28a745, #218838);
+    color: white;
+    border: none;
+    border-radius: 0.2em;
+    padding: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+    &:hover {
+        background: linear-gradient(to right, #218838, #28a745);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.42);
+    }
+}
+
+
+.radioinputs{
+    width: 200%;
+    display: flex;
+
+    font-size: 1.2em;
+    margin-bottom: 0.75em;
+    margin-top: 1.25em;
+    font-weight: 200 !important;
+    img{
+        width: 2em !important;
+        height: 1em !important;
+        margin-right: 0.5em;
+    
+    }
+}
+
+
+.radioinputs input[type="radio"] {
+    display: none;
+}
+
+.radioinputs label {
+    padding-left: 1.5em;
+    position: relative;
+    cursor: pointer;
+}
+
+.radioinputs label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 0.125em solid #28a745;
+}
+
+.radioinputs input[type="radio"]:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 0.375em;
+    top: 0.375em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #28a745;
+}
+
+
+
+
+form {
+    display: none;
+    margin-bottom: 2em;
+}
+
+form label {
+    display: block;
+    font-size: 0.875em;
+    color: #666;
+
+}
+
+#expiryDate{
+    display: flex;
+}
+
+form input[type="text"], select {
+    width: 100%;
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.25em;
+    font-size: 0.875em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+form input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.625em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#atmtext{
+
+    font-weight: lighter;
+    opacity: 0.6;
+}
+
+.goBack {
+    align-self: flex-start;
+    margin-top: 5em;
+    color: #007BFF;
+    border: none;
+    background: none;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 0.75em;
+}
+
+.goBack:hover {
+    text-decoration: underline;
+}
+
+.goBack::before {
+    content: "\21A9 ";
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+#ATM{
+    margin-bottom: 10em;
+}

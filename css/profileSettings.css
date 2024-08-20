@@ -1,0 +1,377 @@
+
+#EditProfileContainer{
+    margin-left: 20vw;
+    display: flex;
+    height: 110vh;
+
+}
+
+
+
+
+
+#orderHistory {
+    min-height: 100vh;
+    display: flex;
+    margin-left: 20vw;
+    font-weight: bold;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.inlineContain {
+    width: 80%;
+    margin-top: 3em;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.listingWithTitle {
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.productList {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #eee;
+    padding: 1em 0;
+}
+
+.productList img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.productInfo {
+    display: flex;
+    width: 90%;
+    margin-left: 1em;
+}
+
+.infoList {
+    margin-left: 1em;
+    display: grid;
+    gap: 0.5em;
+}
+
+.infoList a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.infoList a:hover {
+    text-decoration: underline;
+}
+
+
+.orderSummary {
+    padding: 1em;
+    padding-top: 0em;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+.orderSummary h3 {
+    margin-bottom: 0.5em;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.orderSummary p {
+    margin: 0.2em 0;
+    color: #333;
+}
+
+.orderDiv{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+
+
+
+#sideOptions {
+    position: fixed;
+    left: 0;
+    top: 5%;
+    height: 100%;
+    width: 15vw;
+    padding: 2.5vw;
+    overflow: auto;
+
+    h1{
+        font-size: 1.5em;
+        color: #757575;
+        margin-bottom: 1em;
+        margin-left: 0.25em;
+    }
+}
+
+#sideOptions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sideOptions ul li {
+    padding: 0.7em;
+    border-radius: 0.3em;
+}
+
+#sideOptions ul li {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+#sideOptions ul li:hover {
+    background-color: #f2f2f2;
+}
+
+#sideOptions a.active{
+    li{
+        background-color: #e6e6e6;
+        &:hover{
+            background-color: #ddd;
+        }
+    }
+}
+
+#profilePic{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-left: 15vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.profile-section {
+    color: black;
+    margin-top: 7.5em;
+    margin-left: 4em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+
+}
+
+.profile-section button{
+    align-self: flex-end;
+    font-weight: bold;
+    width: 10vw;
+    padding: 1em;
+    background-color: #0047ab;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: #003b8b;
+    }
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.info-item {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.2em;
+    justify-content: space-between;
+    margin-bottom: 0.75em;
+    border-style: solid;
+    border-color: #eaeaea;
+    padding: 1em;
+    align-items: center;
+
+    input{
+        background-color: #f7fbfc;
+        font-size: 100%;
+        padding: 1em;
+        padding-right: 7em;
+        padding-bottom: 0.3em;
+        padding-left: 0;
+        border: none;
+        margin-top: 0;
+        border-bottom-style: solid;
+        border-color: #eaeaea;
+        transition: all 0.3s ease;
+
+        &:focus{
+            outline: none;
+            border-color: #bcbcbc;
+
+        }
+    }
+}
+
+
+#change{
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    a:hover{
+        cursor: pointer;
+        color: black;
+        label{
+            cursor: pointer;
+        }
+    }
+    
+    .info-item{
+        padding: 1.5em;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: #eaeaea;
+        }
+    }
+}
+
+#delete{
+    width: 40%;
+    padding: 1em;
+    background-color: red;
+    border-radius: 0.15em;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+
+    &:hover{
+        background-color: #b30000;
+
+    }
+}
+
+.print {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.print h3 {
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.print ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.print li {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.print li:last-child {
+    margin-bottom: 0;
+}
+
+.print table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.print th, .print td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.print th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.print tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    font-size: 7em;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.05;
+    z-index: 1;
+}
+
+table{
+    position: relative;
+}
+
+.printForm {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 0.75em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875em;
+    margin: 0.25em 0.125em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.25em;
+    font-weight: 600;
+    margin-top: 4.5em;
+}
+
+.printForm:hover {
+    background-color: #0056b3;
+}
+
+.orderFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
